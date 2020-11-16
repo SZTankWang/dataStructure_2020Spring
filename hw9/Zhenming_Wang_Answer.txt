@@ -1,0 +1,23 @@
+exercise1: insertion sort
+best-case : O(n), input should be an array already in increasing order, "1,2,3,4,5", so we only need to traverse the array once.
+worst-case: O(n^2), input is in decreasing order, such as "5,4,3,2,1", we need to traverse the array, and at each element, we need 
+to traverse backward.
+
+exercise2: Bubble sort
+worst-time : O(n^2)
+
+exercise3：Merge sort
+worst-time: O(n*logn)
+
+exercise 4: Summer sort
+best-case: O(n^2), the input is in increasing order.
+When it's increasing order, during the whole while loop, the reverse function is only O(1) every round, with each round perform a find_max() traversal of O(n)
+The run time should be: O(n^2)
+
+worst-case: O(n^2), the input is in totally random order.
+everytime we need to perform a find_max() of O(n), and a reverse of O(n), which is in total O(2n). 
+The run time should be O(n^2). Compared to the best case, it requires much more reverse operations. 
+
+exercise 5: Comb sort
+Best case: O(n*logn), the array is sorted before moving to normal bubble sort. 
+

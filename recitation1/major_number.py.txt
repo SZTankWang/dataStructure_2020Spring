@@ -1,0 +1,16 @@
+def major_number(array):
+    memo = {}
+    count = 1
+    length = len(array)
+    for i in array:
+        if i not in memo:
+            memo[i] = count
+        else:
+            memo[i] += 1
+    for n in memo.keys():
+        if memo[n] > length//2:
+            return n
+test_array = [1,1,1,1,1,2,2]    
+print(major_number(test_array))
+
+            

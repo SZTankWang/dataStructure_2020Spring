@@ -1,0 +1,5 @@
+We should be mindful that the Big-O notation can be somewhat misleading, for the reason that the constant factor they "hide"
+could be large. For example, the function 1000nlogn could be considered O(nlogn), however, compared this algorithm to
+another one whose running time is 10n^2, we should be able to see that the O(n^2) algorithm takes less operating times.
+This is to say that we should be aware of constant factor and lower-order terms. 
+ But when n is big enough, O(nlogn) is better than O(n^2) algorithms.
